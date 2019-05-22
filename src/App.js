@@ -1,21 +1,15 @@
 import React from 'react';
-import logo from './images/logo.svg';
 import iconMenu from './images/icon-menu.png';
 import iconPlane from './images/icon-plane.png';
 import './App.css';
-import Link from './Components/link/link.js';
+import './App.less';
+import Img from './Components/img/img.js';
+import Header from './Components/header/header.js';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header container">
-        <img src={logo} alt="logo"/>
-        <nav className='App-header-navbar'>
-          <Link name='Book & Manage'/>
-          <Link name='Prepare & Travel'/>
-          <Link name='My Account'/>
-        </nav>
-      </header>
+      <Header />
       <main className='container'>
         <div className='left-container'>
           <div className='main-navbar'>
@@ -27,22 +21,22 @@ function App() {
                 <img src={iconPlane} alt="plane"/>
               </button>
             </div>
-          <nav class="navbar-menu">
-            <ul class="topmenu">
-              <li class="first-li">
-                <a class="topmenu-style">flights</a>
-                <ul class="sub-menu"></ul>
-              </li>
-              <li class="second-li">
-                <a class="topmenu-style">rent car</a>
-                <ul class="rent-car"></ul>
-              </li>
-              <li class="third-li">
-                <a class="topmenu-style">hotel</a>
-                <ul class="hotels"></ul>
-              </li>
-            </ul>
-          </nav>
+            {/*<nav class="navbar-menu">
+              <ul class="topmenu">
+                <li class="first-li">
+                  <a class="topmenu-style">flights</a>
+                  <ul class="sub-menu"></ul>
+                </li>
+                <li class="second-li">
+                  <a class="topmenu-style">rent car</a>
+                  <ul class="rent-car"></ul>
+                </li>
+                <li class="third-li">
+                  <a class="topmenu-style">hotel</a>
+                  <ul class="hotels"></ul>
+                </li>
+              </ul>
+            </nav>*/}
           </div>
         </div>
         <div className='right-container'>

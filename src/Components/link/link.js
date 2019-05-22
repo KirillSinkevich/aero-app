@@ -7,6 +7,15 @@ import React from 'react';
 }*/
 //const export  Link = (props) => <a>{props.name}</a>;
 
-export default function Link(props) {
+/*export default function Link(props) {
 	return <a>{props.name}</a>;
+}*/
+
+export default class Link extends React.Component {
+	render() {
+		const url = '/';
+		return <div>
+			<a href={url}>{this.props.label}</a>
+		</div>
+	}
 }

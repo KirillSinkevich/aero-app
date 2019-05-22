@@ -13,13 +13,13 @@
  
 }
 
-.App-header {
+/* .App-header {
   //font-family: Roboto;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   margin-top: 40px;
-}
+} */
   .App-header-navbar {
     display: flex;
     align-self: center;
@@ -35,7 +35,7 @@
   }
   
 .column-left {
-  width: 50%;
+  width: 56%;
 }
   .icon-menu {
     border: 0;
@@ -63,5 +63,5 @@
   }
   
 .column-right {
-  width: 50%; 
+  width: 44%; 
 }
