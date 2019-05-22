@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from '../link/link.js';
+import './headerMenu.css';
 
 export default class HeaderMenu extends React.Component {
 	render() {
@@ -10,17 +11,8 @@ export default class HeaderMenu extends React.Component {
 		]
 		return <div className='App-header-navbar'>
 			{menus.map((value, index)=>{
-				return <div key={index}><Link label={value} /></div>
+				return <Link label={value} key={index} />;
 			})}
 		</div>
 	}
 }			
-
-/*class Link extends React.Component {
-	render() {
-		const url = '/';
-		return <div>
-			<a href={url}>{this.props.label}</a>
-		</div>
-	}
-}*/

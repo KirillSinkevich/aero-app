@@ -14,8 +14,6 @@ import React from 'react';
 export default class Link extends React.Component {
 	render() {
 		const url = '/';
-		return <div>
-			<a href={url}>{this.props.label}</a>
-		</div>
+		return <a href={url}>{this.props.label}</a>
 	}
 }

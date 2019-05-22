@@ -1,7 +1,12 @@
 .App-header {
-	//font-family: Roboto;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	margin-top: 40px;
+	&-logo {
+		border: 0;
+		padding: 0;
+		background-color: transparent;
+		cursor: pointer;
+	}
 }

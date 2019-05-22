@@ -1,0 +1,13 @@
+.App-header-navbar {
+		display: flex;
+		align-self: center;
+	a{
+	 	display: inline-flex;
+	}
+	a:nth-child(2) {
+	  	margin-left: 80px;
+	}
+	a:nth-child(3) {
+	  	margin-left: 15vw;
+	}
+}

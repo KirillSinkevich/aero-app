@@ -1,39 +1,35 @@
 import React from 'react';
-import iconMenu from './images/icon-menu.png';
-import iconPlane from './images/icon-plane.png';
+import iconMenu from './images/icon-menu.svg';
+import iconPlane from './images/icon-plane.svg';
 import './App.css';
 import './App.less';
-import Img from './Components/img/img.js';
 import Header from './Components/header/header.js';
+import Button from './Components/button/button.js';
 
 function App() {
   return (
     <div className="App">
       <Header />
       <main className='container'>
-        <div className='left-container'>
+        <div className='column column-left'>
           <div className='main-navbar'>
-            <div class="navbar-icon">
-              <button class="icon-menu" type="image">
-                 <img src={iconMenu} alt="menu"/>
-              </button>
-              <button class="icon-plane" type="image">
-                <img src={iconPlane} alt="plane"/>
-              </button>
+            <div className="left-container-navbar-icon">
+              <Button classNameImg={'icon-menu'} linkImg={iconMenu} nameImg={'icon-menu'}/>
+              <Button classNameImg={'icon-plane'} linkImg={iconPlane} nameImg={'icon-plane'}/>
             </div>
-            {/*<nav class="navbar-menu">
-              <ul class="topmenu">
-                <li class="first-li">
-                  <a class="topmenu-style">flights</a>
-                  <ul class="sub-menu"></ul>
+            {/*<nav className="navbar-menu">
+              <ul className="topmenu">
+                <li className="first-li">
+                  <a className="topmenu-style">flights</a>
+                  <ul className="sub-menu"></ul>
                 </li>
-                <li class="second-li">
-                  <a class="topmenu-style">rent car</a>
-                  <ul class="rent-car"></ul>
+                <li className="second-li">
+                  <a className="topmenu-style">rent car</a>
+                  <ul className="rent-car"></ul>
                 </li>
-                <li class="third-li">
-                  <a class="topmenu-style">hotel</a>
-                  <ul class="hotels"></ul>
+                <li className="third-li">
+                  <a className="topmenu-style">hotel</a>
+                  <ul className="hotels"></ul>
                 </li>
               </ul>
             </nav>*/}

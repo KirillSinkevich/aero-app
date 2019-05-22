@@ -1,4 +1,4 @@
-@import './fonts/fonts.css'
+@import './fonts/fonts.css';
 
 .App {
   margin: 0;
@@ -13,54 +13,16 @@
  
 }
 
-/* .App-header {
-  //font-family: Roboto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-top: 40px;
-} */
-  .App-header-navbar {
-    display: flex;
-    align-self: center;
-  }
-  .App-header-navbar a{
-    display: inline-flex;
-  }
-  .App-header-navbar a:nth-child(2) {
-    margin-left: 80px;
-  }
-  .App-header-navbar a:nth-child(3) {
-    margin-left: 15vw;
-  }
   
-.column-left {
+.left-container {
   width: 56%;
-}
-  .icon-menu {
-    border: 0;
-    padding: 0;
-    background-color: transparent;
-    cursor: pointer;
-    &:focus {
-        outline: none;
-    }
-  }
-  .icon-plane {
-    border: 0;
-    padding: 0;
-    background-color: transparent;
-    cursor: pointer;
-    margin-left: 25px;
-    &:focus {
-        outline: none;
-    }
-  }
-  .navbar-icon {
+  &-navbar-icon {
     display: flex;
     flex-direction: row;
     align-self: center;
+    margin-left: 100px;
   }
+}
   
 .column-right {
   width: 44%; 
