@@ -8,22 +8,23 @@
 .container {
   max-width: 1440px;
   margin: 0 auto;
-}
-.App-logo {
- 
-}
-
-  
-.left-container {
-  width: 56%;
-  &-navbar-icon {
-    display: flex;
-    flex-direction: row;
-    align-self: center;
-    margin-left: 100px;
+  &--center {
+    margin-top: 100px;
   }
 }
-  
-.column-right {
-  width: 44%; 
+.column {
+  &--left {
+    width: 56%;
+  }
+  &--right {
+    width: 44%; 
+  }
+  .navbar{
+    &__btn {
+      display: flex;
+      flex-direction: row;
+      align-self: center;
+      margin-left: 100px;
+    }
+  }
 }

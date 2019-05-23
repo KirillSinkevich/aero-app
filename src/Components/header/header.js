@@ -6,9 +6,11 @@ import './header.css';
 
 export default class Header extends React.Component {
 	render() {
-		return <div className='App-header'>
-			<Img className={'App-header-logo'} link={logo} name='logo'/>
+		return <header className='App-header container'>
+			<div>
+				<Img className={'App-header__logo'} link={logo} name='logo'/>
+			</div>
 	        <HeaderMenu />
-		</div>
+		</header>
 	}
 }

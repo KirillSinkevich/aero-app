@@ -1,19 +1,11 @@
-.icon-menu {
+.navbar__btn {
     border: 0;
     padding: 0;
     background-color: transparent;
     cursor: pointer;
-    &:focus {
-        outline: none;
-    }
-}
-.icon-plane {
-    border: 0;
-    padding: 0;
-    background-color: transparent;
-    cursor: pointer;
-    margin-left: 25px;
-    &:focus {
-        outline: none;
-    }
+   &--menu {
+   }
+   &--plane {
+     
+   }
 }

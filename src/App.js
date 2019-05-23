@@ -1,22 +1,27 @@
 import React from 'react';
-import iconMenu from './images/icon-menu.svg';
-import iconPlane from './images/icon-plane.svg';
+//import iconMenu from './images/icon-menu.svg';
+//import iconPlane from './images/icon-plane.svg';
 import './App.css';
 import './App.less';
 import Header from './Components/header/header.js';
 import Button from './Components/button/button.js';
+import Svg from './Components/svg/svg.js';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <main className='container'>
-        <div className='column column-left'>
-          <div className='main-navbar'>
-            <div className="left-container-navbar-icon">
-              <Button classNameImg={'icon-menu'} linkImg={iconMenu} nameImg={'icon-menu'}/>
-              <Button classNameImg={'icon-plane'} linkImg={iconPlane} nameImg={'icon-plane'}/>
+      <main className='container container--center'>
+        <div className='column column--left'>
+          <div className='navbar'>
+            <div className="navbar__btn">
+              <Button type='menu'/>
+              <Button type=''/>
             </div>
+            <svg className="svg-icon">
+              <use xlinkHref="#svg-plane"></use>
+            </svg>
+            <Svg type='plane' />
             {/*<nav className="navbar-menu">
               <ul className="topmenu">
                 <li className="first-li">
